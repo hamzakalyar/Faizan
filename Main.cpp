@@ -17,7 +17,7 @@ string toLowerCase(const string& str)
 }
 
 // Function to check if a word is a palindrome using Stack
-bool isPalindromeUsingStack(const string& word)
+bool isPalindrome(const string& word)
 {
     Stack stack(word.length()); // Create a stack of appropriate size
 
@@ -56,7 +56,7 @@ int main()
     while (file >> word)
     {  // Read words one by one
         string lowerWord = toLowerCase(word); // Convert to lowercase
-        if (isPalindromeUsingStack(lowerWord))
+        if (isPalindrome(lowerWord))
         {
             palindromeCount++;
         }
